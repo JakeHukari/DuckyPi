@@ -1,43 +1,51 @@
 # DuckyPi
-DuckyPi Harvester payload for the 'HackyPi device from SB Components
+DuckyPi Harvester payload for the HackyPi device from SB Components.
 
-Official HackyPi can be obtained from: (https://shop.sb-components.co.uk/products/hackypi-compact-diy-usb-hacking-tool)
+Official HackyPi can be obtained from: https://shop.sb-components.co.uk/products/hackypi-compact-diy-usb-hacking-tool
+
+# Requirements
+- HackyPi device
+- MicroSD card
+- USB flash drive (FAT32 formatted)
 
 # Setup
-1. Plug in the hackypi and wait for the filesystem to mount.
-2. Copy code.py, and lib folder to the root of the Hackypi filesystem.
-3. Plug a micro sd card into computer and copy both folders inside of 'sd_card_assests' (assets and fonts) onto the sd card.
-4. Plug a seperate usb or drive into computer and rename it to: 'DUCKYPI'. (ensure it is formatted to FAT32)
-5. Unplug hackypi, micro sd card, and DUCKYPI usb drive.
+1. Plug in the HackyPi and wait for the filesystem to mount.
+2. Copy `code.py` and the `lib` folder to the root of the HackyPi filesystem.
+3. Plug a MicroSD card into your computer and copy both folders inside of `sd_card_assets` (assets and fonts) onto the SD card.
+4. Plug a separate USB drive into your computer and rename it to exactly: `DUCKYPI` (ensure it is formatted to FAT32).
+5. Unplug the HackyPi, MicroSD card, and DUCKYPI USB drive.
 
 # Execution
-1. Plug sd card into the sd card slot on the hackypi.  
-2. Plug hackypi back into computer.
-3. Plug DUCKYPI usb drive into computer.
+1. Plug the SD card into the SD card slot on the HackyPi.
+2. Plug the HackyPi into the target computer.
+3. Plug the DUCKYPI USB drive into the target computer.
 
-Upon boot, the hackypi will begin harvesting.
+Upon boot, the HackyPi will begin harvesting.
 
-The hackypi will harvest all stored wifi usernames and passwords, system information, and stored browser data. (saved login data, browsing history, cookies, etc from any browser recognized by the hackypi (chrome, firefox, edge))
+The HackyPi will harvest all stored WiFi usernames and passwords, system information, and stored browser data (saved login data, browsing history, cookies, etc. from Chrome, Firefox, and Edge).
 
-The hackypi will compress all harvested data into a zip file and copy it to the DUCKYPI usb drive.
+The HackyPi will compress all harvested data into a zip file and copy it to the DUCKYPI USB drive.
 
-The hackypi will then delete the harvested data from the system, it will only remain on the 'DUCKYPI' usb drive. 
+The HackyPi will then delete the harvested data from the system. It will only remain on the DUCKYPI USB drive.
+
+# Safe Mode
+To prevent accidental execution during setup, turn ON Caps Lock before plugging in the HackyPi. The device will enter Safe Mode and will not execute the payload.
 
 # Loot Retrieval
-Once harvest is complete there will be a date and time stamped zip file on the 'DUCKYPI' usb drive.
+Once harvest is complete there will be a date and time stamped zip file on the DUCKYPI USB drive.
 Unzip the file and you will find the harvested data.
-Wifi credentials and system info will be stored in plaintext file format. (txt)
-Browser information will be stored in database format (sqlite & json), some browser information might be encrypted or hashed, you will need to decrypt it to view the data.
+WiFi credentials and system info will be stored in plaintext file format (.txt).
+Browser information will be stored in database format (sqlite & json). Some browser information may be encrypted or hashed and will need to be decrypted to view the data.
 
 # Modifications
-To modify the images on the HackyPi screen you will need to ensure you convert your images to a .bmp format. 
-Normal Bitmap (24-bit) will not work. You need to convert them to indexed color BMPs (8-bit or less with a color palette), not standard 24-bit RGB BMPs. If the images are standard 24-bit color, they will fail to load on the HackyPi screen.
+To modify the images on the HackyPi screen you will need to ensure you convert your images to a .bmp format.
+Normal Bitmap (24-bit) will not work. You need to convert them to indexed color BMPs (8-bit or less with a color palette). If the images are standard 24-bit color, they will fail to load on the HackyPi screen.
 
-You will also need to ensure the images are the correct size for the screen. (240x135)
-(HackyPi will NOT auto resize images)
+You will also need to ensure the images are the correct size for the screen (240x135).
+The HackyPi will NOT auto-resize images.
 
-If you would like to change the font (vt323_12 from Google Fonts by default) you can upload any standard ttf font but the ttf (TrueType font) will need to be converted to a .bdf font format. 
-(HackyPi will NOT auto convert ttf to bdf)
+If you would like to change the font (vt323_12 from Google Fonts by default) you can upload any standard TTF font but it will need to be converted to a .bdf font format.
+The HackyPi will NOT auto-convert TTF to BDF.
 
 # WARNING
 This payload is for educational purposes only. Unauthorized access to computer systems is illegal and can result in serious legal consequences. Use this tool responsibly and only with proper authorization.
