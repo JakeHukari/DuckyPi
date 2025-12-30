@@ -60,6 +60,8 @@ If you would like to change the font (vt323_12 from Google Fonts by default) you
 #### The HackyPi will NOT auto-convert TTF to BDF.
 
 If you upload images or fonts that are not compatible- the device will still execute the payload but the images and font will not display.
+
 (so its not really a big deal) 
+
 # WARNING
 This payload is for educational purposes only. Unauthorized access to computer systems is illegal & can result in serious legal consequences. Use this tool responsibly & only with proper authorization.
