@@ -9,11 +9,11 @@ Official HackyPi can be obtained from: https://shop.sb-components.co.uk/products
 - USB flash drive (FAT32 formatted)
 
 # Setup
-1. Plug in the HackyPi and wait for the filesystem to mount.
-2. Copy `code.py` and the `lib` folder to the root of the HackyPi filesystem.
-3. Plug a MicroSD card into your computer and copy both folders inside of `sd_card_assets` (assets and fonts) onto the SD card.
-4. Plug a separate USB drive into your computer and rename it to exactly: `DUCKYPI` (ensure it is formatted to FAT32).
-5. Unplug the HackyPi, MicroSD card, and DUCKYPI USB drive.
+1. Plug in the HackyPi & wait for the filesystem to mount.
+2. Copy `code.py` & the `lib` folder to the root of the HackyPi filesystem.
+3. Plug a MicroSD card into your computer & copy both folders inside of `sd_card_assets` (assets & fonts) onto the SD card.
+4. Plug a separate USB drive into your computer & rename it to exactly: `DUCKYPI` (ensure it is formatted to FAT32).
+5. Unplug the HackyPi, MicroSD card, & DUCKYPI USB drive.
 
 # Execution
 1. Plug the SD card into the SD card slot on the HackyPi.
@@ -22,20 +22,20 @@ Official HackyPi can be obtained from: https://shop.sb-components.co.uk/products
 
 Upon boot, the HackyPi will begin harvesting.
 
-The HackyPi will harvest all stored WiFi usernames and passwords, system information, and stored browser data (saved login data, browsing history, cookies, etc. from Chrome, Firefox, and Edge).
+The HackyPi will harvest all stored WiFi usernames & passwords, system information, & stored browser data (saved login data, browsing history, cookies, etc. from Chrome, Firefox, & Edge).
 
-The HackyPi will compress all harvested data into a zip file and copy it to the DUCKYPI USB drive.
+The HackyPi will compress all harvested data into a zip file & copy it to the DUCKYPI USB drive.
 
 The HackyPi will then delete the harvested data from the system. It will only remain on the DUCKYPI USB drive.
 
 # Safe Mode
-To prevent accidental execution during setup, turn ON Caps Lock before plugging in the HackyPi. The device will enter Safe Mode and will not execute the payload.
+To prevent accidental execution during setup, turn ON Caps Lock before plugging in the HackyPi. The device will enter Safe Mode & will not execute the payload.
 
 # Loot Retrieval
-Once harvest is complete there will be a date and time stamped zip file on the DUCKYPI USB drive.
-Unzip the file and you will find the harvested data.
-WiFi credentials and system info will be stored in plaintext file format (.txt).
-Browser information will be stored in database format (sqlite & json). Some browser information may be encrypted or hashed and will need to be decrypted to view the data.
+Once harvest is complete there will be a date & time stamped zip file on the DUCKYPI USB drive.
+Unzip the file & you will find the harvested data.
+WiFi credentials & system info will be stored in plaintext file format (.txt).
+Browser information will be stored in database format (sqlite & json). Some browser information may be encrypted or hashed & will need to be decrypted to view the data.
 
 # Modifications
 To modify the images on the HackyPi screen you will need to ensure you convert your images to a .bmp format.
@@ -48,4 +48,4 @@ If you would like to change the font (vt323_12 from Google Fonts by default) you
 The HackyPi will NOT auto-convert TTF to BDF.
 
 # WARNING
-This payload is for educational purposes only. Unauthorized access to computer systems is illegal and can result in serious legal consequences. Use this tool responsibly and only with proper authorization.
+This payload is for educational purposes only. Unauthorized access to computer systems is illegal & can result in serious legal consequences. Use this tool responsibly & only with proper authorization.
