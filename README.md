@@ -25,5 +25,15 @@ Unzip the file and you will find the harvested data.
 Wifi credentials and system info will be stored in plaintext file format. (txt)
 Browser information will be stored in database format (sqlite & json), some browser information might be encrypted or hashed, you will need to decrypt it to view the data.
 
+# Modifications
+To modify the images on the HackyPi screen you will need to ensure you convert your images to a .bmp format. 
+Normal Bitmap (24-bit) will not work. You need to convert them to indexed color BMPs (8-bit or less with a color palette), not standard 24-bit RGB BMPs. If the images are standard 24-bit color, they will fail to load on the HackyPi screen.
+
+You will also need to ensure the images are the correct size for the screen. (240x135)
+(HackyPi will NOT auto resize images)
+
+If you would like to change the font (vt323_12 by default) you can upload any font but the ttf (TrueType font) will need to be converted to a .bdf font file. 
+(HackyPi will NOT auto convert ttf to bdf)
+
 # WARNING
 This payload is for educational purposes only. Unauthorized access to computer systems is illegal and can result in serious legal consequences. Use this tool responsibly and only with proper authorization.
