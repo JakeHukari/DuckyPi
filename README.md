@@ -16,30 +16,27 @@ Official HackyPi can be obtained from: https://shop.sb-components.co.uk/products
 5. Unplug the HackyPi, MicroSD card, & DUCKYPI USB drive.
 
 # Safe Mode 
-DuckyPi has a built-in Safe Mode that can be enabled by pressing Caps Lock before plugging in the HackyPi.
+DuckyPi has a built-in `Safe Mode` function that can be enabled by pressing `Caps Lock` while the HackyPi is booting.
 
-Once DuckyPi code is live on the HackyPi device you can press `Caps Lock` during boot to enter `Safe Mode` to prevent the device from executing HID functions.
+Once the DuckyPi code is placed on the HackyPi device you can press `Caps Lock` during boot or t-5 second countdown to enter `Safe Mode` to prevent the device from executing HID functions.
 
 Safe Mode allows you to modify the HackyPi filesystem without executing the payload.
 
 # Execution
-1. Plug the SD card into the SD card slot on the HackyPi.
-2. Plug the HackyPi into the target computer.
-3. Plug the DUCKYPI USB drive into the target computer.
+1. Plug the HackyPi into the target computer. (Ensure the sd card is inserted into the HackyPi)
+2. Plug the DUCKYPI USB drive into the target computer.
+3. Wait
 
 Upon boot (unless Safe Mode is enabled), the HackyPi will begin harvesting.
 
 The HackyPi will harvest all stored WiFi usernames & passwords, system information, & stored browser data (saved login data, browsing history, cookies, etc. from Chrome, Firefox, & Edge).
 
-The HackyPi will compress all harvested data into a zip file & copy it to the DUCKYPI USB drive.
+The HackyPi will compress all harvested data into a zip file & copy it to the `DUCKYPI` USB drive.
 
-The HackyPi will then delete the harvested data from the system. It will only remain on the DUCKYPI USB drive.
-
-# Safe Mode
-To prevent accidental execution during setup, turn ON Caps Lock before plugging in the HackyPi. The device will enter Safe Mode & will not execute the payload.
+The HackyPi will then delete the harvested data from the system. It will only remain on the `DUCKYPI` USB drive.
 
 # Loot Retrieval
-Once harvest is complete there will be a date & time stamped zip file on the DUCKYPI USB drive.
+Once harvest is complete there will be a date & time stamped zip file on the `DUCKYPI` USB drive.
 Unzip the file & you will find the harvested data.
 WiFi credentials & system info will be stored in plaintext file format (.txt).
 Browser information will be stored in database format (sqlite & json). Some browser information may be encrypted or hashed & will need to be decrypted to view the data.
