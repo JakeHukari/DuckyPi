@@ -15,14 +15,17 @@ Official HackyPi can be obtained from: https://shop.sb-components.co.uk/products
 4. Plug a separate USB drive into your computer & rename it to exactly: `DUCKYPI` (ensure it is formatted to FAT32).
 5. Unplug the HackyPi, MicroSD card, & DUCKYPI USB drive.
 
+# Safe Mode 
+DuckyPi has a built-in Safe Mode that can be enabled by pressing Caps Lock before plugging in the HackyPi.
+
+Once DuckyPi code is live on the HackyPi device you can press `Caps Lock` during boot to enter `Safe Mode` to prevent the device from executing HID functions.
+
+Safe Mode allows you to modify the HackyPi filesystem without executing the payload.
+
 # Execution
 1. Plug the SD card into the SD card slot on the HackyPi.
 2. Plug the HackyPi into the target computer.
 3. Plug the DUCKYPI USB drive into the target computer.
-
-Once DuckyPi code is live on the HackyPi device you can press Caps Lock during boot to enter Safe Mode & prevent HID execution.
-
-Safe Mode allows you to modify the HackyPi filesystem without executing the payload.
 
 Upon boot (unless Safe Mode is enabled), the HackyPi will begin harvesting.
 
