@@ -29,7 +29,7 @@ Safe Mode allows you to modify the HackyPi filesystem without executing the payl
 
 Upon boot, after the 5 second countdown (unless Safe Mode is enabled), the HackyPi will begin harvesting.
 
-The HackyPi will harvest all stored WiFi usernames & passwords, system information, & stored browser data (saved login data, browsing history, cookies, etc. from Chrome, Firefox, & Edge).
+The HackyPi will harvest all stored WiFi usernames & passwords, system information, & stored browser data (saved login data, browsing history, cookies, etc. from Chrome, Firefox, & Edge) from the target computer.
 
 The HackyPi will compress all harvested data into a zip file & copy it to your `DUCKYPI` USB drive.
 
