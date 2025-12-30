@@ -16,6 +16,7 @@ DuckyPi Harvester payload for the 'HackyPi device from SB Components
 1. Plug sd card into the sd card slot on the hackypi.  
 2. Plug hackypi back into computer.
 3. Plug DUCKYPI usb drive into computer.
+
 Upon boot, the hackypi will begin harvesting.
 
 The hackypi will harvest all stored wifi usernames and passwords, system information, and stored browser data. (saved login data, browsing history, cookies, etc from any browser recognized by the hackypi (chrome, firefox, edge))
