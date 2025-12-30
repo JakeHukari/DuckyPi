@@ -9,16 +9,26 @@ Official HackyPi can be obtained from: https://shop.sb-components.co.uk/products
 - USB flash drive named `DUCKYPI` (FAT32 formatted)
 
 # Setup
+#### HackyPi
 1. Plug in the HackyPi & wait for the filesystem to mount.
 2. Copy `code.py` & the entire `lib` folder to the root of the HackyPi filesystem.
+#### Micro SD card
 3. Plug a MicroSD card into your computer & copy both folders inside of `sd_card_assets` (assets & fonts) onto the SD card.
-4. Plug a separate USB drive into your computer & rename it to exactly: `DUCKYPI` (ensure it is formatted to FAT32).
+
+(Ensure you copy the assets & fonts folders INSIDE of the sd_card_assets folder NOT the entire sd_card_assets folder itself)
+
+#### DUCKYPI USB drive (this will be the loot storage device)
+4. Plug a separate USB drive into your computer & rename it exactly: `DUCKYPI` (ensure it is formatted to FAT32).
+
+(If you want the use a different name for your loot storage device, ensure you also change the name in the code.py file (line 354))
+#### Final step
 5. Unplug the HackyPi, MicroSD card, & DUCKYPI USB drive.
+6. Insert the MicroSD card into the HackyPi.
 
 # Safe Mode 
 DuckyPi has a built-in `Safe Mode` function that can be enabled by pressing `Caps Lock` while the HackyPi is booting.
 
-Once the DuckyPi code is placed on the HackyPi device you can press `Caps Lock` during boot or t-5 second countdown to enter `Safe Mode` to prevent the device from executing HID functions.
+Once the DuckyPi code is placed on the HackyPi device you can enable `Caps Lock` during boot or t-5 second countdown to enter `Safe Mode` to prevent the device from executing HID functions.
 
 Safe Mode allows you to modify the HackyPi filesystem without executing the payload.
 
