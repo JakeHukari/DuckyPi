@@ -10,7 +10,7 @@ Official HackyPi can be obtained from: https://shop.sb-components.co.uk/products
 
 # Setup
 1. Plug in the HackyPi & wait for the filesystem to mount.
-2. Copy `code.py` & the `lib` folder to the root of the HackyPi filesystem.
+2. Copy `code.py` & the entire `lib` folder to the root of the HackyPi filesystem.
 3. Plug a MicroSD card into your computer & copy both folders inside of `sd_card_assets` (assets & fonts) onto the SD card.
 4. Plug a separate USB drive into your computer & rename it to exactly: `DUCKYPI` (ensure it is formatted to FAT32).
 5. Unplug the HackyPi, MicroSD card, & DUCKYPI USB drive.
@@ -27,7 +27,7 @@ Safe Mode allows you to modify the HackyPi filesystem without executing the payl
 2. Plug the DUCKYPI USB drive into the target computer.
 3. Wait
 
-Upon boot (unless Safe Mode is enabled), the HackyPi will begin harvesting.
+Upon boot, after the 5 second countdown (unless Safe Mode is enabled), the HackyPi will begin harvesting.
 
 The HackyPi will harvest all stored WiFi usernames & passwords, system information, & stored browser data (saved login data, browsing history, cookies, etc. from Chrome, Firefox, & Edge).
 
