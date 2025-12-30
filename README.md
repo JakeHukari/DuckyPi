@@ -83,4 +83,4 @@ To modify the font (vt323_12 from Google Fonts by default) you can upload any st
 #### (so its not really a big deal) 
 
 # WARNING
-This payload is for educational purposes only. Unauthorized access to computer systems is illegal & can result in serious legal consequences. Use this tool responsibly & only with proper authorization.
+This project is for educational purposes only. Unauthorized access to any computer systems is illegal & can result in serious legal consequences. Use this tool responsibly & only with proper authorization 😉.
