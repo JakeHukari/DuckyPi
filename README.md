@@ -20,7 +20,11 @@ Official HackyPi can be obtained from: https://shop.sb-components.co.uk/products
 2. Plug the HackyPi into the target computer.
 3. Plug the DUCKYPI USB drive into the target computer.
 
-Upon boot, the HackyPi will begin harvesting.
+Once DuckyPi code is live on the HackyPi device you can press Caps Lock during boot to enter Safe Mode & prevent HID execution.
+
+Safe Mode allows you to modify the HackyPi filesystem without executing the payload.
+
+Upon boot (unless Safe Mode is enabled), the HackyPi will begin harvesting.
 
 The HackyPi will harvest all stored WiFi usernames & passwords, system information, & stored browser data (saved login data, browsing history, cookies, etc. from Chrome, Firefox, & Edge).
 
