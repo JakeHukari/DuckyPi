@@ -48,9 +48,9 @@ Browser information will be stored in database format (sqlite & json). Some brow
 The Loot folder will also contain a log file of the harvest process. If any errors occur during the harvest process use the log to dertermine which step failed.
 
 # Modifications
-To modify the countdown timer- change the `COUNTDOWN_SECONDS` variable in the `code.py` file. (default is 5 seconds)
+To modify the countdown timer- change the `COUNTDOWN_SECONDS` variable in the `code.py` file (line 38). (default is 5 seconds)
 
-To modify the delay between commands- change the `CMD_DELAY` variable in the `code.py` file. (default is 1 second)
+To modify the delay between commands- change the `CMD_DELAY` variable in the `code.py` file (line 39). (default is 1 second)
 
 To modify the images on the HackyPi screen you will need to ensure you convert your images to a .bmp format.
 
