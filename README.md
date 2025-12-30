@@ -27,13 +27,14 @@ Safe Mode allows you to modify the HackyPi filesystem without executing the payl
 2. Plug the DUCKYPI USB drive into the target computer.
 3. Wait
 
-Upon boot, after the 5 second countdown (unless Safe Mode is enabled), the HackyPi will begin harvesting.
+# Harvest Process
+1. Upon boot, after the 5 second countdown (unless Safe Mode is enabled), the HackyPi will begin harvesting.
 
-The HackyPi will harvest all stored WiFi usernames & passwords, system information, & stored browser data (saved login data, browsing history, cookies, etc. from Chrome, Firefox, & Edge) from the target computer.
+2. The HackyPi will harvest all stored WiFi usernames & passwords, system information, & stored browser data (saved login data, browsing history, cookies, etc. from Chrome, Firefox, & Edge) from the target computer.
 
-The HackyPi will compress all harvested data into a zip file & copy it to your `DUCKYPI` USB drive.
+3. The HackyPi will compress all harvested data into a zip file & copy it to your `DUCKYPI` USB drive.
 
-The HackyPi will then delete the harvested data from the system. It will only remain on your `DUCKYPI` USB drive.
+4. The HackyPi will then delete the harvested data from the system. It will only remain on your `DUCKYPI` USB drive.
 
 # Loot Retrieval
 Once harvest is complete there will be a compressed, date & time stamped, Loot folder on your `DUCKYPI` USB drive.
@@ -47,6 +48,10 @@ Browser information will be stored in database format (sqlite & json). Some brow
 The Loot folder will also contain a log file of the harvest process. If any errors occur during the harvest process use the log to dertermine which step failed.
 
 # Modifications
+To modify the countdown timer- change the `COUNTDOWN_SECONDS` variable in the `code.py` file. (default is 5 seconds)
+
+To modify the delay between commands- change the `CMD_DELAY` variable in the `code.py` file. (default is 1 second)
+
 To modify the images on the HackyPi screen you will need to ensure you convert your images to a .bmp format.
 
 Normal Bitmap (24-bit) will not work. You need to convert them to indexed color BMPs (8-bit or less with a color palette). If the images are standard 24-bit color, they will fail to load on the HackyPi screen.
@@ -55,7 +60,7 @@ You will also need to ensure the images are the correct size for the screen (240
 
 #### The HackyPi will NOT auto-resize images.
 
-If you would like to change the font (vt323_12 from Google Fonts by default) you can upload any standard TTF font but it will need to be converted to a .bdf font format.
+To modify the font (vt323_12 from Google Fonts by default) you can upload any standard TTF font but it will need to be converted to a .bdf font format.
 
 #### The HackyPi will NOT auto-convert TTF to BDF.
 
