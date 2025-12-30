@@ -1,16 +1,21 @@
 # DuckyPi
 DuckyPi Harvester payload for the 'HackyPi device from SB Components
 # Setup
-Plug in the hackypi and wait for filesystem to mount.
-Copy code.py, and lib folder to the root of the Hackypi filesystem.
-Plug a micro sd card into computer and copy both folders inside of 'sd_card_assests' (assets and fonts) onto the sd card.
 
-Plug a seperate usb or drive into computer and rename it to: 'DUCKYPI'. (ensure it is formatted to FAT32)
+1. Plug in the hackypi and wait for filesystem to mount.
 
-Unplug hackypi, micro sd card, and DUCKYPI usb drive.
-Plug sd card into the sd card slot on the hackypi.  
-Plug hackypi back into computer.
-Plug DUCKYPI usb drive into computer.
+2. Copy code.py, and lib folder to the root of the Hackypi filesystem.
+
+3. Plug a micro sd card into computer and copy both folders inside of 'sd_card_assests' (assets and fonts) onto the sd card.
+
+4. Plug a seperate usb or drive into computer and rename it to: 'DUCKYPI'. (ensure it is formatted to FAT32)
+
+5. Unplug hackypi, micro sd card, and DUCKYPI usb drive.
+
+# Execution
+1. Plug sd card into the sd card slot on the hackypi.  
+2. Plug hackypi back into computer.
+3. Plug DUCKYPI usb drive into computer.
 Upon boot, the hackypi will begin harvesting.
 
 The hackypi will harvest all stored wifi usernames and passwords, system information, and stored browser data. (saved login data, browsing history, cookies, etc from any browser recognized by the hackypi (chrome, firefox, edge))
