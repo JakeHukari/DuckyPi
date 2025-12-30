@@ -44,6 +44,8 @@ WiFi credentials & system info will be stored in plaintext file format (.txt).
 
 Browser information will be stored in database format (sqlite & json). Some browser information may be encrypted or hashed & will need to be decrypted to view the data.
 
+The Loot folder will also contain a log file of the harvest process. If any errors occur during the harvest process use the log to dertermine which step failed.
+
 # Modifications
 To modify the images on the HackyPi screen you will need to ensure you convert your images to a .bmp format.
 
@@ -57,5 +59,7 @@ If you would like to change the font (vt323_12 from Google Fonts by default) you
 
 #### The HackyPi will NOT auto-convert TTF to BDF.
 
+If you upload images or fonts that are not compatible- the device will still execute the payload but the images and font will not display.
+(so its not really a big deal) 
 # WARNING
 This payload is for educational purposes only. Unauthorized access to computer systems is illegal & can result in serious legal consequences. Use this tool responsibly & only with proper authorization.
