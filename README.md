@@ -3,13 +3,9 @@ DuckyPi Harvester payload for the 'HackyPi device from SB Components
 # Setup
 
 1. Plug in the hackypi and wait for filesystem to mount.
-
 2. Copy code.py, and lib folder to the root of the Hackypi filesystem.
-
 3. Plug a micro sd card into computer and copy both folders inside of 'sd_card_assests' (assets and fonts) onto the sd card.
-
 4. Plug a seperate usb or drive into computer and rename it to: 'DUCKYPI'. (ensure it is formatted to FAT32)
-
 5. Unplug hackypi, micro sd card, and DUCKYPI usb drive.
 
 # Execution
