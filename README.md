@@ -31,25 +31,31 @@ Upon boot, after the 5 second countdown (unless Safe Mode is enabled), the Hacky
 
 The HackyPi will harvest all stored WiFi usernames & passwords, system information, & stored browser data (saved login data, browsing history, cookies, etc. from Chrome, Firefox, & Edge).
 
-The HackyPi will compress all harvested data into a zip file & copy it to the `DUCKYPI` USB drive.
+The HackyPi will compress all harvested data into a zip file & copy it to your `DUCKYPI` USB drive.
 
-The HackyPi will then delete the harvested data from the system. It will only remain on the `DUCKYPI` USB drive.
+The HackyPi will then delete the harvested data from the system. It will only remain on your `DUCKYPI` USB drive.
 
 # Loot Retrieval
-Once harvest is complete there will be a date & time stamped zip file on the `DUCKYPI` USB drive.
-Unzip the file & you will find the harvested data.
+Once harvest is complete there will be a compressed, date & time stamped, Loot folder on your `DUCKYPI` USB drive.
+
+Unzip the folder & you will find the harvested data.
+
 WiFi credentials & system info will be stored in plaintext file format (.txt).
+
 Browser information will be stored in database format (sqlite & json). Some browser information may be encrypted or hashed & will need to be decrypted to view the data.
 
 # Modifications
 To modify the images on the HackyPi screen you will need to ensure you convert your images to a .bmp format.
+
 Normal Bitmap (24-bit) will not work. You need to convert them to indexed color BMPs (8-bit or less with a color palette). If the images are standard 24-bit color, they will fail to load on the HackyPi screen.
 
 You will also need to ensure the images are the correct size for the screen (240x135).
-The HackyPi will NOT auto-resize images.
+
+#### The HackyPi will NOT auto-resize images.
 
 If you would like to change the font (vt323_12 from Google Fonts by default) you can upload any standard TTF font but it will need to be converted to a .bdf font format.
-The HackyPi will NOT auto-convert TTF to BDF.
+
+#### The HackyPi will NOT auto-convert TTF to BDF.
 
 # WARNING
 This payload is for educational purposes only. Unauthorized access to computer systems is illegal & can result in serious legal consequences. Use this tool responsibly & only with proper authorization.
