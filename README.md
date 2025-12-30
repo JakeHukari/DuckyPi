@@ -26,6 +26,7 @@ Safe Mode allows you to modify the HackyPi filesystem without executing the payl
 1. Plug the HackyPi into the target computer. (Ensure the sd card is inserted into the HackyPi)
 2. Plug the DUCKYPI USB drive into the target computer.
 3. Wait
+4. Harvest Process will begin.
 
 # Harvest Process
 1. Upon boot, after the 5 second countdown (unless Safe Mode is enabled), the HackyPi will begin harvesting.
@@ -64,9 +65,8 @@ To modify the font (vt323_12 from Google Fonts by default) you can upload any st
 
 #### The HackyPi will NOT auto-convert TTF to BDF.
 
-If you upload images or fonts that are not compatible- the device will still execute the payload but the images and font will not display.
-
-(so its not really a big deal) 
+### If you upload images or fonts that are not compatible- the device will still execute the payload but the images and font will not display.
+#### (so its not really a big deal) 
 
 # WARNING
 This payload is for educational purposes only. Unauthorized access to computer systems is illegal & can result in serious legal consequences. Use this tool responsibly & only with proper authorization.
