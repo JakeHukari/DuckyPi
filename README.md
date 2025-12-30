@@ -22,7 +22,8 @@ The hackypi will then delete the harvested data from the system, it will only re
 # Loot Retrieval
 Once harvest is complete there will be a date and time stamped zip file on the 'DUCKYPI' usb drive.
 Unzip the file and you will find the harvested data.
-Browser information will be stored in database format, some browser information might be encrypted or hashed, you will need to decrypt it to view the data.
+Wifi credentials and system info will be stored in plaintext file format. (txt)
+Browser information will be stored in database format (sqlite & json), some browser information might be encrypted or hashed, you will need to decrypt it to view the data.
 
 # WARNING
 This payload is for educational purposes only. Unauthorized access to computer systems is illegal and can result in serious legal consequences. Use this tool responsibly and only with proper authorization.
