@@ -6,7 +6,7 @@ Official HackyPi can be obtained from: https://shop.sb-components.co.uk/products
 # Requirements
 - HackyPi device
 - MicroSD card
-- USB flash drive (FAT32 formatted)
+- USB flash drive named `DUCKYPI` (FAT32 formatted)
 
 # Setup
 1. Plug in the HackyPi & wait for the filesystem to mount.

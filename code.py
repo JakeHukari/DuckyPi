@@ -11,7 +11,7 @@
 # 5. Deletes temp folder and ZIP from Desktop
 # 6. GREEN SCREEN with victory duck = Done, safe to unplug
 #
-# REQUIRES: SD card with /assets/ folder containing duck sprites
+# REQUIRES: SD card with /assets/ folder & /fonts/ folder containing duck sprites
 # NOTE: Insert a USB drive named "DUCKYPI" alongside the HackyPi
 
 import time
