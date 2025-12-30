@@ -32,7 +32,7 @@ Normal Bitmap (24-bit) will not work. You need to convert them to indexed color 
 You will also need to ensure the images are the correct size for the screen. (240x135)
 (HackyPi will NOT auto resize images)
 
-If you would like to change the font (vt323_12 by default) you can upload any font but the ttf (TrueType font) will need to be converted to a .bdf font file. 
+If you would like to change the font (vt323_12 from Google Fonts by default) you can upload any standard ttf font but the ttf (TrueType font) will need to be converted to a .bdf font format. 
 (HackyPi will NOT auto convert ttf to bdf)
 
 # WARNING
